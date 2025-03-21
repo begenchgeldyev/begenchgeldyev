@@ -6,7 +6,7 @@
 
 ## 🙆‍♂️ **About Me:**
 
--   📚 I’m currently learning **Computer Science**
+-   📚 I’m currently studying **Computer Science**
 
 -   📫 You can reach me at **begenchgeldyev@gmail.com**
 ___
