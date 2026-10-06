@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="490" viewBox="0 0 880 490" role="img" aria-labelledby="title desc">
+  <title id="title">begench@127.0.0.1: fastfetch and git log --oneline career</title>
+  <desc id="desc">Animated terminal. fastfetch: begench@tomsk, fullstack developer at Synecta, M.S. Applied Informatics at Tomsk State University, stack TypeScript, React, TanStack, C++, agents Claude Code, OpenCode, OpenClaw, Neovim and tmux on Omarchy Linux, Russian and English (C1). git log of career: Synecta (fullstack, web app for RF measurement instruments), AdHaven (fullstack, led 3 devs, shipped 3 projects in 9 months), MarPla (frontend, rewrote the frontend on React and MobX in 3 months), TCA (frontend, e-reporting app that cut paperwork by 40%).</desc>
+  <style>
+    text { font-family: ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 15px; fill: #d1decb;
+      font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+    .title { font-size: 11px; letter-spacing: .08em; fill: #d1decb; fill-opacity: .8; }
+    .p    { fill: #00ff41; font-weight: 700; }   /* prompt */
+    .cmd  { fill: #f2f1f0; }                     /* typed command */
+    .cur  { fill: #00ff41; }                     /* block cursor */
+    .hl   { fill: #00ff41; font-weight: 700; }   /* begench / tomsk */
+    .br   { fill: #f2f1f0; }
+    .key  { fill: #ffd393; }
+    .rule { fill: #a4b59f; }
+    .hash, .par { fill: #ffd393; }
+    .head { fill: #ebffe2; font-weight: 700; }
+    .ref  { fill: #00ff41; font-weight: 700; }
+    .role { fill: #a4b59f; }
+    .dot  { fill: #a4b59f; fill-opacity: .5; }
+
+    /* Animation. Un-animated styles ARE the final frame, so renderers without
+       CSS animation (or reduced-motion users) see the finished session.
+       .tf = transient typing frame: hidden, shown only during its own slot
+       .in = final content: hidden from load until animation-duration ends,
+             then the un-animated (visible) style takes over. No fill-mode on
+             purpose: delayed fill-mode reveals do not fire in Chrome when the SVG is embedded as an image. */
+    .tf { opacity: 0; animation-name: on; animation-timing-function: step-end; }
+    .in { animation-name: hide; animation-timing-function: step-end; }
+    .blink { animation: blink 1s step-end infinite; }
+    @keyframes on { from, to { opacity: 1; } }
+    @keyframes hide { from, to { opacity: 0; } }
+    @keyframes blink { 50% { fill-opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs><clipPath id="win"><rect width="880" height="490" rx="8"/></clipPath></defs>
+  <!-- window -->
+  <g clip-path="url(#win)">
+    <rect width="880" height="490" fill="#0e0e0e"/>
+    <rect width="880" height="34" fill="#2a2a2a"/>
+    <rect y="33" width="880" height="1" fill="#4a5d45" fill-opacity=".3"/>
+  </g>
+  <circle cx="22" cy="17.0" r="6" fill="#93000a" fill-opacity=".5"/>
+  <circle cx="42" cy="17.0" r="6" fill="#ffd393" fill-opacity=".5"/>
+  <circle cx="62" cy="17.0" r="6" fill="#00ff41" fill-opacity=".5"/>
+  <text x="440.0" y="21.0" text-anchor="middle" class="title">BEGENCH@127.0.0.1 — ZSH — 80X24</text>
+  <rect x=".5" y=".5" width="879" height="489" rx="8" fill="none" stroke="#4a5d45" stroke-opacity=".5"/>
+
+  <!-- $ fastfetch : typing frames, then the entered command -->
+  <text x="24" y="70" class="tf" style="animation-delay:0ms;animation-duration:650ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cur blink" style="animation-delay:0ms">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:650ms;animation-duration:76ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">f</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:726ms;animation-duration:65ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fa</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:791ms;animation-duration:81ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fas</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:872ms;animation-duration:59ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fast</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:931ms;animation-duration:60ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastf</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:991ms;animation-duration:90ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfe</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:1081ms;animation-duration:62ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfet</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:1143ms;animation-duration:79ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfetc</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="tf" style="animation-delay:1222ms;animation-duration:320ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfetch</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="70" class="in" style="animation-duration:1542ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfetch</tspan></text>
+
+  <!-- fastfetch logo: ANSI-shadow style "BG" drawn with rects -->
+  <g shape-rendering="crispEdges">
+    <g class="in" style="animation-duration:1682ms">
+      <rect x="28" y="83" width="60" height="20" fill="#00802a"/>
+      <rect x="118" y="83" width="60" height="20" fill="#00802a"/>
+      <rect x="24" y="79" width="60" height="20" fill="#00ff41"/>
+      <rect x="114" y="79" width="60" height="20" fill="#00ff41"/>
+    </g>
+    <g class="in" style="animation-duration:1707ms">
+      <rect x="28" y="103" width="20" height="20" fill="#00802a"/>
+      <rect x="78" y="103" width="20" height="20" fill="#00802a"/>
+      <rect x="108" y="103" width="20" height="20" fill="#00802a"/>
+      <rect x="24" y="99" width="20" height="20" fill="#00ff41"/>
+      <rect x="74" y="99" width="20" height="20" fill="#00ff41"/>
+      <rect x="104" y="99" width="20" height="20" fill="#00ff41"/>
+    </g>
+    <g class="in" style="animation-duration:1732ms">
+      <rect x="28" y="123" width="60" height="20" fill="#00802a"/>
+      <rect x="108" y="123" width="20" height="20" fill="#00802a"/>
+      <rect x="158" y="123" width="30" height="20" fill="#00802a"/>
+      <rect x="24" y="119" width="60" height="20" fill="#00ff41"/>
+      <rect x="104" y="119" width="20" height="20" fill="#00ff41"/>
+      <rect x="154" y="119" width="30" height="20" fill="#00ff41"/>
+    </g>
+    <g class="in" style="animation-duration:1757ms">
+      <rect x="28" y="143" width="20" height="20" fill="#00802a"/>
+      <rect x="78" y="143" width="20" height="20" fill="#00802a"/>
+      <rect x="108" y="143" width="20" height="20" fill="#00802a"/>
+      <rect x="168" y="143" width="20" height="20" fill="#00802a"/>
+      <rect x="24" y="139" width="20" height="20" fill="#00ff41"/>
+      <rect x="74" y="139" width="20" height="20" fill="#00ff41"/>
+      <rect x="104" y="139" width="20" height="20" fill="#00ff41"/>
+      <rect x="164" y="139" width="20" height="20" fill="#00ff41"/>
+    </g>
+    <g class="in" style="animation-duration:1782ms">
+      <rect x="28" y="163" width="60" height="20" fill="#00802a"/>
+      <rect x="118" y="163" width="60" height="20" fill="#00802a"/>
+      <rect x="24" y="159" width="60" height="20" fill="#00ff41"/>
+      <rect x="114" y="159" width="60" height="20" fill="#00ff41"/>
+    </g>
+  </g>
+
+  <!-- fastfetch info: edit values here -->
+  <text x="228" y="92" class="in" style="animation-duration:1682ms"><tspan class="hl">begench</tspan><tspan class="br">@</tspan><tspan class="hl">tomsk</tspan></text>
+  <text x="228" y="114" class="in rule" style="animation-duration:1707ms">-------------</text>
+  <g class="in" style="animation-duration:1732ms"><text x="228" y="136" class="key">role</text><text x="302" y="136">fullstack developer @ synecta</text></g>
+  <g class="in" style="animation-duration:1757ms"><text x="228" y="158" class="key">study</text><text x="302" y="158">m.s. applied informatics @ tsu</text></g>
+  <g class="in" style="animation-duration:1782ms"><text x="228" y="180" class="key">stack</text><text x="302" y="180">typescript · react · tanstack · c++</text></g>
+  <g class="in" style="animation-duration:1807ms"><text x="228" y="202" class="key">agents</text><text x="302" y="202">claude code · opencode · openclaw</text></g>
+  <g class="in" style="animation-duration:1832ms"><text x="228" y="224" class="key">editor</text><text x="302" y="224">neovim + tmux</text></g>
+  <g class="in" style="animation-duration:1857ms"><text x="228" y="246" class="key">os</text><text x="302" y="246">omarchy linux</text></g>
+  <g class="in" style="animation-duration:1882ms"><text x="228" y="268" class="key">langs</text><text x="302" y="268">russian · english (c1)</text></g>
+  <g class="in" style="animation-duration:1932ms" shape-rendering="crispEdges">
+    <rect x="228" y="299" width="28" height="16" fill="#00530e"/>
+    <rect x="256" y="299" width="28" height="16" fill="#00802a"/>
+    <rect x="284" y="299" width="28" height="16" fill="#00e639"/>
+    <rect x="312" y="299" width="28" height="16" fill="#00ff41"/>
+    <rect x="340" y="299" width="28" height="16" fill="#7ff670"/>
+    <rect x="368" y="299" width="28" height="16" fill="#ebffe2"/>
+    <rect x="396" y="299" width="28" height="16" fill="#ffd393"/>
+    <rect x="424" y="299" width="28" height="16" fill="#fdaf00"/>
+  </g>
+
+  <!-- $ git log (oneline) career : typing frames, then the entered command -->
+  <text x="24" y="356" class="tf" style="animation-delay:2112ms;animation-duration:420ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cur blink" style="animation-delay:2112ms">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2532ms;animation-duration:44ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">g</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2576ms;animation-duration:73ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">gi</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2649ms;animation-duration:54ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2703ms;animation-duration:98ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git </tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2801ms;animation-duration:46ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git l</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2847ms;animation-duration:68ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git lo</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2915ms;animation-duration:67ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:2982ms;animation-duration:100ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log </tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3082ms;animation-duration:56ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log -</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3138ms;animation-duration:46ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3184ms;animation-duration:76ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --o</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3260ms;animation-duration:68ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --on</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3328ms;animation-duration:44ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --one</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3372ms;animation-duration:77ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --onel</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3449ms;animation-duration:48ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneli</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3497ms;animation-duration:55ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --onelin</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3552ms;animation-duration:44ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3596ms;animation-duration:132ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline </tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3728ms;animation-duration:66ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline c</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3794ms;animation-duration:44ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline ca</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3838ms;animation-duration:55ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline car</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3893ms;animation-duration:43ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline care</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:3936ms;animation-duration:76ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline caree</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="tf" style="animation-delay:4012ms;animation-duration:320ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline career</tspan><tspan class="cur">█</tspan></text>
+  <text x="24" y="356" class="in" style="animation-duration:4332ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">git log --oneline career</tspan></text>
+
+  <!-- career log: hash / ref / role / description columns -->
+  <g class="in" style="animation-duration:4492ms"><text x="24" y="378" class="hash">7f3c2a1</text><text x="98" y="378"><tspan class="par">(</tspan><tspan class="head">HEAD -&gt; </tspan><tspan class="ref">synecta</tspan><tspan class="par">)</tspan></text><text x="265" y="378" class="role">fullstack</text><text x="358" y="378" class="dot">·</text><text x="377" y="378">web app for RF measurement instruments</text></g>
+  <g class="in" style="animation-duration:4582ms"><text x="24" y="400" class="hash">c41e9d0</text><text x="98" y="400"><tspan class="par">(</tspan><tspan class="ref">adhaven</tspan><tspan class="par">)</tspan></text><text x="265" y="400" class="role">fullstack</text><text x="358" y="400" class="dot">·</text><text x="377" y="400">led 3 devs, shipped 3 projects in 9 months</text></g>
+  <g class="in" style="animation-duration:4672ms"><text x="24" y="422" class="hash">9a0b7e2</text><text x="98" y="422"><tspan class="par">(</tspan><tspan class="ref">marpla</tspan><tspan class="par">)</tspan></text><text x="265" y="422" class="role">frontend</text><text x="358" y="422" class="dot">·</text><text x="377" y="422">rewrote the frontend on react + mobx in 3 months</text></g>
+  <g class="in" style="animation-duration:4762ms"><text x="24" y="444" class="hash">2d6f1c8</text><text x="98" y="444"><tspan class="par">(</tspan><tspan class="ref">tca</tspan><tspan class="par">)</tspan></text><text x="265" y="444" class="role">frontend</text><text x="358" y="444" class="dot">·</text><text x="377" y="444">e-reporting app that cut paperwork by 40%</text></g>
+
+  <!-- final prompt, cursor blinks forever -->
+  <text x="24" y="466" class="in" style="animation-duration:4982ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cur blink" style="animation-delay:4982ms">█</tspan></text>
+</svg>
