@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="229" height="40" viewBox="0 0 229 40" role="img" aria-label="begenchgeldyev.com">
+<svg xmlns="http://www.w3.org/2000/svg" width="233" height="40" viewBox="0 0 233 40" role="img" aria-label="begenchgeldyev.com">
   <title>begenchgeldyev.com</title>
-  <rect width="229" height="40" fill="#00ff41"/>
-  <text x="115.3" y="24.6" text-anchor="middle" fill="#002203" font-weight="700" font-family='ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="13" letter-spacing="0.12em">BEGENCHGELDYEV.COM</text>
+  <rect width="233" height="40" fill="#00ff41"/>
+  <g transform="translate(16 12)" fill="none" stroke="#002203" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><ellipse cx="8" cy="8" rx="2.7" ry="6.5"/><path d="M1.5 8h13M2.7 4.6h10.6M2.7 11.4h10.6"/></g>
+  <text x="42" y="24.6" fill="#002203" font-weight="700" font-family='ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="13" letter-spacing="0.12em">BEGENCHGELDYEV.COM</text>
 </svg>

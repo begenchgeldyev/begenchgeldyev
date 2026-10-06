@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="490" viewBox="0 0 880 490" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="510" viewBox="0 0 880 510" role="img" aria-labelledby="title desc">
   <title id="title">begench@127.0.0.1: fastfetch and git log --oneline career</title>
   <desc id="desc">Animated terminal. fastfetch: begench@tomsk, fullstack developer at Synecta, M.S. Applied Informatics at Tomsk State University, stack TypeScript, React, TanStack, C++, agents Claude Code, OpenCode, OpenClaw, Neovim and tmux on Omarchy Linux, Russian and English (C1). git log of career: Synecta (fullstack, web app for RF measurement instruments), AdHaven (fullstack, led 3 devs, shipped 3 projects in 9 months), MarPla (frontend, rewrote the frontend on React and MobX in 3 months), TCA (frontend, e-reporting app that cut paperwork by 40%).</desc>
   <style>
@@ -18,6 +18,9 @@
     .ref  { fill: #00ff41; font-weight: 700; }
     .role { fill: #a4b59f; }
     .dot  { fill: #a4b59f; fill-opacity: .5; }
+    .tm   { font-size: 12px; fill: #a4b59f; }       /* tmux status bar */
+    .tm-on   { fill: #00ff41; font-weight: 700; }
+    .tm-sess { fill: #002203; font-weight: 700; }
 
     /* Animation. Un-animated styles ARE the final frame, so renderers without
        CSS animation (or reduced-motion users) see the finished session.
@@ -33,18 +36,35 @@
     @keyframes blink { 50% { fill-opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
-  <defs><clipPath id="win"><rect width="880" height="490" rx="8"/></clipPath></defs>
-  <!-- window -->
+  <defs>
+    <clipPath id="win"><rect width="880" height="510" rx="8"/></clipPath>
+    <linearGradient id="led" x1="0" y1="80" x2="0" y2="182" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#85fd75"/><stop offset=".5" stop-color="#00ff41"/><stop offset="1" stop-color="#00a832"/>
+    </linearGradient>
+    <filter id="glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- window chrome + tmux status bar -->
   <g clip-path="url(#win)">
-    <rect width="880" height="490" fill="#0e0e0e"/>
+    <rect width="880" height="510" fill="#0e0e0e"/>
     <rect width="880" height="34" fill="#2a2a2a"/>
     <rect y="33" width="880" height="1" fill="#4a5d45" fill-opacity=".3"/>
+    <rect y="486" width="880" height="24" fill="#1c1b1b"/>
+    <rect y="486" width="880" height="1" fill="#4a5d45" fill-opacity=".4"/>
+    <rect y="486" width="40" height="24" fill="#00ff41"/>
   </g>
   <circle cx="22" cy="17.0" r="6" fill="#93000a" fill-opacity=".5"/>
   <circle cx="42" cy="17.0" r="6" fill="#ffd393" fill-opacity=".5"/>
   <circle cx="62" cy="17.0" r="6" fill="#00ff41" fill-opacity=".5"/>
   <text x="440.0" y="21.0" text-anchor="middle" class="title">BEGENCH@127.0.0.1 — ZSH — 80X24</text>
-  <rect x=".5" y=".5" width="879" height="489" rx="8" fill="none" stroke="#4a5d45" stroke-opacity=".5"/>
+  <text x="20" y="502" text-anchor="middle" class="tm tm-sess">[0]</text>
+  <text x="54" y="502" class="tm tm-on">0:zsh*</text>
+  <text x="115" y="502" class="tm">1:nvim</text>
+  <text x="176" y="502" class="tm">2:git</text>
+  <text x="864" y="502" text-anchor="end" class="tm">"begench@tomsk"</text>
+  <rect x=".5" y=".5" width="879" height="509" rx="8" fill="none" stroke="#4a5d45" stroke-opacity=".5"/>
 
   <!-- $ fastfetch : typing frames, then the entered command -->
   <text x="24" y="70" class="tf" style="animation-delay:0ms;animation-duration:650ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cur blink" style="animation-delay:0ms">█</tspan></text>
@@ -59,46 +79,24 @@
   <text x="24" y="70" class="tf" style="animation-delay:1222ms;animation-duration:320ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfetch</tspan><tspan class="cur">█</tspan></text>
   <text x="24" y="70" class="in" style="animation-duration:1542ms"><tspan class="p">begench@127.0.0.1/$</tspan> <tspan class="cmd">fastfetch</tspan></text>
 
-  <!-- fastfetch logo: ANSI-shadow style "BG" drawn with rects -->
-  <g shape-rendering="crispEdges">
-    <g class="in" style="animation-duration:1682ms">
-      <rect x="28" y="83" width="60" height="20" fill="#00802a"/>
-      <rect x="118" y="83" width="60" height="20" fill="#00802a"/>
-      <rect x="24" y="79" width="60" height="20" fill="#00ff41"/>
-      <rect x="114" y="79" width="60" height="20" fill="#00ff41"/>
-    </g>
-    <g class="in" style="animation-duration:1707ms">
-      <rect x="28" y="103" width="20" height="20" fill="#00802a"/>
-      <rect x="78" y="103" width="20" height="20" fill="#00802a"/>
-      <rect x="108" y="103" width="20" height="20" fill="#00802a"/>
-      <rect x="24" y="99" width="20" height="20" fill="#00ff41"/>
-      <rect x="74" y="99" width="20" height="20" fill="#00ff41"/>
-      <rect x="104" y="99" width="20" height="20" fill="#00ff41"/>
-    </g>
-    <g class="in" style="animation-duration:1732ms">
-      <rect x="28" y="123" width="60" height="20" fill="#00802a"/>
-      <rect x="108" y="123" width="20" height="20" fill="#00802a"/>
-      <rect x="158" y="123" width="30" height="20" fill="#00802a"/>
-      <rect x="24" y="119" width="60" height="20" fill="#00ff41"/>
-      <rect x="104" y="119" width="20" height="20" fill="#00ff41"/>
-      <rect x="154" y="119" width="30" height="20" fill="#00ff41"/>
-    </g>
-    <g class="in" style="animation-duration:1757ms">
-      <rect x="28" y="143" width="20" height="20" fill="#00802a"/>
-      <rect x="78" y="143" width="20" height="20" fill="#00802a"/>
-      <rect x="108" y="143" width="20" height="20" fill="#00802a"/>
-      <rect x="168" y="143" width="20" height="20" fill="#00802a"/>
-      <rect x="24" y="139" width="20" height="20" fill="#00ff41"/>
-      <rect x="74" y="139" width="20" height="20" fill="#00ff41"/>
-      <rect x="104" y="139" width="20" height="20" fill="#00ff41"/>
-      <rect x="164" y="139" width="20" height="20" fill="#00ff41"/>
-    </g>
-    <g class="in" style="animation-duration:1782ms">
-      <rect x="28" y="163" width="60" height="20" fill="#00802a"/>
-      <rect x="118" y="163" width="60" height="20" fill="#00802a"/>
-      <rect x="24" y="159" width="60" height="20" fill="#00ff41"/>
-      <rect x="114" y="159" width="60" height="20" fill="#00ff41"/>
-    </g>
+  <!-- fastfetch logo: "BG" on a 5x7 LED matrix (dim unlit dots, glowing lit dots) -->
+  <g class="in" style="animation-duration:1682ms" fill="#00ff41" fill-opacity=".07">
+    <rect x="24" y="80" width="12" height="12" rx="2"/><rect x="39" y="80" width="12" height="12" rx="2"/><rect x="54" y="80" width="12" height="12" rx="2"/><rect x="69" y="80" width="12" height="12" rx="2"/><rect x="84" y="80" width="12" height="12" rx="2"/><rect x="99" y="80" width="12" height="12" rx="2"/><rect x="114" y="80" width="12" height="12" rx="2"/><rect x="129" y="80" width="12" height="12" rx="2"/><rect x="144" y="80" width="12" height="12" rx="2"/><rect x="159" y="80" width="12" height="12" rx="2"/><rect x="174" y="80" width="12" height="12" rx="2"/>
+    <rect x="24" y="95" width="12" height="12" rx="2"/><rect x="39" y="95" width="12" height="12" rx="2"/><rect x="54" y="95" width="12" height="12" rx="2"/><rect x="69" y="95" width="12" height="12" rx="2"/><rect x="84" y="95" width="12" height="12" rx="2"/><rect x="99" y="95" width="12" height="12" rx="2"/><rect x="114" y="95" width="12" height="12" rx="2"/><rect x="129" y="95" width="12" height="12" rx="2"/><rect x="144" y="95" width="12" height="12" rx="2"/><rect x="159" y="95" width="12" height="12" rx="2"/><rect x="174" y="95" width="12" height="12" rx="2"/>
+    <rect x="24" y="110" width="12" height="12" rx="2"/><rect x="39" y="110" width="12" height="12" rx="2"/><rect x="54" y="110" width="12" height="12" rx="2"/><rect x="69" y="110" width="12" height="12" rx="2"/><rect x="84" y="110" width="12" height="12" rx="2"/><rect x="99" y="110" width="12" height="12" rx="2"/><rect x="114" y="110" width="12" height="12" rx="2"/><rect x="129" y="110" width="12" height="12" rx="2"/><rect x="144" y="110" width="12" height="12" rx="2"/><rect x="159" y="110" width="12" height="12" rx="2"/><rect x="174" y="110" width="12" height="12" rx="2"/>
+    <rect x="24" y="125" width="12" height="12" rx="2"/><rect x="39" y="125" width="12" height="12" rx="2"/><rect x="54" y="125" width="12" height="12" rx="2"/><rect x="69" y="125" width="12" height="12" rx="2"/><rect x="84" y="125" width="12" height="12" rx="2"/><rect x="99" y="125" width="12" height="12" rx="2"/><rect x="114" y="125" width="12" height="12" rx="2"/><rect x="129" y="125" width="12" height="12" rx="2"/><rect x="144" y="125" width="12" height="12" rx="2"/><rect x="159" y="125" width="12" height="12" rx="2"/><rect x="174" y="125" width="12" height="12" rx="2"/>
+    <rect x="24" y="140" width="12" height="12" rx="2"/><rect x="39" y="140" width="12" height="12" rx="2"/><rect x="54" y="140" width="12" height="12" rx="2"/><rect x="69" y="140" width="12" height="12" rx="2"/><rect x="84" y="140" width="12" height="12" rx="2"/><rect x="99" y="140" width="12" height="12" rx="2"/><rect x="114" y="140" width="12" height="12" rx="2"/><rect x="129" y="140" width="12" height="12" rx="2"/><rect x="144" y="140" width="12" height="12" rx="2"/><rect x="159" y="140" width="12" height="12" rx="2"/><rect x="174" y="140" width="12" height="12" rx="2"/>
+    <rect x="24" y="155" width="12" height="12" rx="2"/><rect x="39" y="155" width="12" height="12" rx="2"/><rect x="54" y="155" width="12" height="12" rx="2"/><rect x="69" y="155" width="12" height="12" rx="2"/><rect x="84" y="155" width="12" height="12" rx="2"/><rect x="99" y="155" width="12" height="12" rx="2"/><rect x="114" y="155" width="12" height="12" rx="2"/><rect x="129" y="155" width="12" height="12" rx="2"/><rect x="144" y="155" width="12" height="12" rx="2"/><rect x="159" y="155" width="12" height="12" rx="2"/><rect x="174" y="155" width="12" height="12" rx="2"/>
+    <rect x="24" y="170" width="12" height="12" rx="2"/><rect x="39" y="170" width="12" height="12" rx="2"/><rect x="54" y="170" width="12" height="12" rx="2"/><rect x="69" y="170" width="12" height="12" rx="2"/><rect x="84" y="170" width="12" height="12" rx="2"/><rect x="99" y="170" width="12" height="12" rx="2"/><rect x="114" y="170" width="12" height="12" rx="2"/><rect x="129" y="170" width="12" height="12" rx="2"/><rect x="144" y="170" width="12" height="12" rx="2"/><rect x="159" y="170" width="12" height="12" rx="2"/><rect x="174" y="170" width="12" height="12" rx="2"/>
+  </g>
+  <g fill="url(#led)" filter="url(#glow)">
+    <g class="in" style="animation-duration:1682ms"><rect x="24" y="80" width="12" height="12" rx="2"/><rect x="39" y="80" width="12" height="12" rx="2"/><rect x="54" y="80" width="12" height="12" rx="2"/><rect x="69" y="80" width="12" height="12" rx="2"/><rect x="129" y="80" width="12" height="12" rx="2"/><rect x="144" y="80" width="12" height="12" rx="2"/><rect x="159" y="80" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1707ms"><rect x="24" y="95" width="12" height="12" rx="2"/><rect x="84" y="95" width="12" height="12" rx="2"/><rect x="114" y="95" width="12" height="12" rx="2"/><rect x="174" y="95" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1732ms"><rect x="24" y="110" width="12" height="12" rx="2"/><rect x="84" y="110" width="12" height="12" rx="2"/><rect x="114" y="110" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1757ms"><rect x="24" y="125" width="12" height="12" rx="2"/><rect x="39" y="125" width="12" height="12" rx="2"/><rect x="54" y="125" width="12" height="12" rx="2"/><rect x="69" y="125" width="12" height="12" rx="2"/><rect x="114" y="125" width="12" height="12" rx="2"/><rect x="144" y="125" width="12" height="12" rx="2"/><rect x="159" y="125" width="12" height="12" rx="2"/><rect x="174" y="125" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1782ms"><rect x="24" y="140" width="12" height="12" rx="2"/><rect x="84" y="140" width="12" height="12" rx="2"/><rect x="114" y="140" width="12" height="12" rx="2"/><rect x="174" y="140" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1807ms"><rect x="24" y="155" width="12" height="12" rx="2"/><rect x="84" y="155" width="12" height="12" rx="2"/><rect x="114" y="155" width="12" height="12" rx="2"/><rect x="174" y="155" width="12" height="12" rx="2"/></g>
+    <g class="in" style="animation-duration:1832ms"><rect x="24" y="170" width="12" height="12" rx="2"/><rect x="39" y="170" width="12" height="12" rx="2"/><rect x="54" y="170" width="12" height="12" rx="2"/><rect x="69" y="170" width="12" height="12" rx="2"/><rect x="129" y="170" width="12" height="12" rx="2"/><rect x="144" y="170" width="12" height="12" rx="2"/><rect x="159" y="170" width="12" height="12" rx="2"/><rect x="174" y="170" width="12" height="12" rx="2"/></g>
   </g>
 
   <!-- fastfetch info: edit values here -->

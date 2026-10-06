@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="133" height="40" viewBox="0 0 133 40" role="img" aria-label="telegram">
+<svg xmlns="http://www.w3.org/2000/svg" width="137" height="40" viewBox="0 0 137 40" role="img" aria-label="telegram">
   <title>telegram</title>
-  <rect x=".5" y=".5" width="132" height="39" fill="#0a0a0a" stroke="#a4b59f"/>
-  <text x="67.3" y="24.6" text-anchor="middle" fill="#f2f1f0" font-family='ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="13" letter-spacing="0.12em">TELEGRAM</text>
+  <rect x=".5" y=".5" width="136" height="39" fill="#0a0a0a" stroke="#a4b59f"/>
+  <g transform="translate(16 12)" fill="none" stroke="#f2f1f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 1.8 1.5 7.2l4.8 1.9 6.1 4.9z"/><path d="M14.5 1.8 6.3 9.1l.3 4.7 2.3-2.8"/></g>
+  <text x="42" y="24.6" fill="#f2f1f0" font-family='ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="13" letter-spacing="0.12em">TELEGRAM</text>
 </svg>
